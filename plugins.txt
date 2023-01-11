@@ -8,3 +8,4 @@ configuration-as-code-support:latest
 job-dsl:latest
 pam-auth:latest
 blueocean:latest
+warnings-ng:latest

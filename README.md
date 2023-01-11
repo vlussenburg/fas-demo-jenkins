@@ -4,7 +4,7 @@ Based on [Jenkins Blue Ocean image](https://hub.docker.com/r/jenkinsci/blueocean
 
 Run
 ```sh
-docker build . --build-arg MAPI_TOKEN=<your mapi prod token>
-docker run -p8080:8080 -v /var/run/docker.sock:/var/run/docker.sock <docker image sha>
+docker build . -t forallsecure/jenkins-demo:latest
+docker run -p8080:8080 docker run -ti -p8080:8080 -e "MAPI_TOKEN=<your token>" -v /var/run/docker.sock:/var/run/docker.sock forallsecure/jenkins-demo:latest
 open http://localhost:8080
 ```

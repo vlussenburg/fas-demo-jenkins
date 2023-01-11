@@ -7,7 +7,7 @@ jenkins:
   markupFormatter: "plainText"
   mode: NORMAL
   myViewsTabBar: "standard"
-  numExecutors: 2
+  numExecutors: 1
   primaryView:
     all:
       name: "all"
@@ -57,7 +57,7 @@ credentials:
             id:       unused
             username: admin
             password: admin
-        - secretText:
+        - string:
             scope:    GLOBAL
             id:       MAPI_TOKEN
             secret:   ${MAPI_TOKEN}

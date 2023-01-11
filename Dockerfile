@@ -1,6 +1,6 @@
 #ARG jenkins_tag
-ARG MAPI_TOKEN
 FROM jenkins/jenkins
+
 COPY plugins.txt /usr/share/jenkins/additional-plugins.txt
 RUN jenkins-plugin-cli -f /usr/share/jenkins/additional-plugins.txt
 
